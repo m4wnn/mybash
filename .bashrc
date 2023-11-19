@@ -674,3 +674,28 @@ else
 	echo "can't found the autojump script"
 fi
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/m4wnn/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/m4wnn/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/m4wnn/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/m4wnn/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# ----- Julia -----
+export PATH="$PATH:/home/m4wnn/julia-1.9.3/bin"
+
+# ----- jupytext shortcut -----
+function jptext() {
+    jupytext --set-formats py:percent,ipynb "$1"
+}
+                                                           140,1         Bot
+
+
