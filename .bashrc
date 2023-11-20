@@ -696,6 +696,5 @@ export PATH="$PATH:/home/m4wnn/julia-1.9.3/bin"
 function jptext() {
     jupytext --set-formats py:percent,ipynb "$1"
 }
-                                                           140,1         Bot
 
 
