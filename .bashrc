@@ -155,7 +155,7 @@ alias lf="ls -l | egrep -v '^d'" # files only
 alias ldir="ls -l | egrep '^d'" # directories only
 
 # alias chmod commands
-alias mx='chmod a+x'
+alias mx='chmod u+x'
 alias 000='chmod -R 000'
 alias 644='chmod -R 644'
 alias 666='chmod -R 666'
